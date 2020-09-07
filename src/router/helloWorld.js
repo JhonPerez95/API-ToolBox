@@ -1,15 +1,10 @@
 const { Router } = require('express');
 const router = Router();
 
+const { sendText } = require('../controller/helloWord');
+
 // TODO: Controller
 
-router.post('/api/hellow', (req, res) => {
-  const body = req.body;
-
-  res.status(400).json({
-    ok: true,
-    data: body,
-  });
-});
+router.post('/api/hellow', sendText);
 
 module.exports = router;
