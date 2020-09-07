@@ -1,3 +1,7 @@
 ## Instalar dependencias
 
-#### npm install
+npm install
+
+### Correr API:
+
+npm run start
