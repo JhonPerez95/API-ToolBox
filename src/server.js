@@ -5,7 +5,7 @@ const cors = require('cors');
 const app = express();
 
 // Public Directory
-// app.use(express.static('public'));
+app.use(express.static('public'));
 
 // Config
 app.use(express.json());
