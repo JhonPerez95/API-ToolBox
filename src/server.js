@@ -1,4 +1,5 @@
 const express = require('express');
+const cors = require('cors');
 
 // Initializations
 const app = express();
@@ -8,6 +9,7 @@ const app = express();
 
 // Config
 app.use(express.json());
+app.use(cors());
 
 // Routes
 app.use(require('./router/rootRoutes'));
