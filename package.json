@@ -4,7 +4,7 @@
   "description": "Prueba tecnica para ToolBox",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha src/tests/helloWorld.test.js --exit",
     "dev": "nodemon src/index.js",
     "start": "node src/index.js"
   },
@@ -13,6 +13,8 @@
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "mocha": "^8.1.3",
+    "supertest": "^4.0.2"
   }
 }
